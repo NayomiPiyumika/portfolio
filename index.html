@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd5530eb8d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfollio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Undergraduate</p>
+                <h1>Hi, I'm <span>Nayomi Piyumika</span>,<br>From Kandy, Sri Lanka</h1>
+            </div>
+        </div>
+    </div>
+<!-- --------about----------
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/WhatsApp Image 2024-12-09 at 10.25.16_006062d1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am a proactive and ambitious IT undergraduatewith a passion for learning and innovation. Skilled in adapting to fast-paced environments, I excel
+                        in team settings and under pressure. Eager to
+                        contribute to an organization that offers growth
+                        and professional development.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web app/ interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android /ios apps</li>
+                                <li><span>Agile and Scrum Business</span></li>
+                                <li><span>Networking Fundamentals</span></li>
+                                <li><span>Business Analysis</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022 - Present</span><br>Bachelor of Information Technology Faculty of Technology University of Colombo</li>
+                                <li><span>2020</span><br>G.C.E. Advanced Level<br>Z-Score - 1.9131</li>
+                                <li><span>2017</span><br>G.C.E. Odinary Level<br>A7 B2</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certification">
+                            <ul>
+                                <li><span>Business Analysis Foundations</span></li>
+                                <li><span>Mobile app design in figma</span></li>
+                                <li><span>User experience design</span></li>
+                                <li><span>Python for beginners</span></li>
+                                <li><span>Python guided project</span></li>
+                                <li><span>Agile scrum developer certification</span></li>
+                                <li><span>Agile scrum product owner certification</span></li>
+                                <li><span>Professional diploma in agile and scrum</span></li>
+                                <li><span>Advanced scrum master certification</span></li>
+                                <li><span>Master of essential c++ programming beginner toadvanced</span></li>
+                                <li><span>Mater Linux basics</span></li>
+                                <li><span>CSS, Bootstrap, JavaScript, Web development course</span></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementByClassName("tab-links");
+        var tabcontents = document.getElementByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currenttarget.classList.add("active-link")
+        }
+
+
+    </script>
+         -->
+
+
+
+             <!-- About Section -->
+             <div id="about">
+                 <div class="container">
+                     <div class="row">
+                         <div class="about-col-1">
+                             <img src="images/WhatsApp Image 2024-12-09 at 10.25.16_006062d1.jpg">
+                         </div>
+                         <div class="about-col-2">
+                             <h1 class="sub-title">About me</h1>
+                             <p>I am a proactive and ambitious IT undergraduate
+                                with a passion for learning and innovation. Skilled
+                                in adapting to fast-paced environments, I excel
+                                in team settings and under pressure. Eager to
+                                contribute to an organization that offers growth
+                                and professional development.</p>
+                             <div class="tab-titles">
+                                 <!-- Updated event handling -->
+                                 <p class="tab-links active-link" onmouseover="highlightTab('skills')">Skills</p>
+                                 <p class="tab-links" onmouseover="highlightTab('education')">Education</p>
+                                 <p class="tab-links" onmouseover="highlightTab('certification')">Certification</p>
+                             </div>
+                             <div class="tab-contents active-tab" id="skills">
+                                 <ul>
+                                     <li><span>UI/UX</span><br>Designing Web app/interfaces</li>
+                                     <li><span>Web Development</span><br>Web app Development</li>
+                                     <li><span>App Development</span><br>Building Android/ios Apps</li>
+                                     <li><span>Agile and scrum business</span></li>
+                                     <li><span>BusinessAnalysis</span></li>
+                                     <li><span>Networking fundamentals</span></li>
+                                     
+                                 </ul>
+                             </div>
+                             <div class="tab-contents" id="education">
+                                 <ul>
+                                     <li><span>2022 - Present</span><br>Bachelor of Information Technology <br>Faculty of Technology<br> University Of Colombo</li>
+                                     <li><span>2020</span><br>G.C.E.Advanced Level<br>Z-Core - 1.9131</li>
+                                     <li><span>2017</span><br>G.C.E.Oditionary Level<br>A7 , B2</li>
+                                     
+                                 </ul>
+                             </div>
+                             <div class="tab-contents" id="certification">
+                                 <ul>
+                                     <li><span>Business Analysis Foundations</span></li>
+                                     <li><span>Mobile app design in figma</span></li>
+                                     <li><span>User experience design</span></li>
+                                     <li><span>Python for beginners</span></li>
+                                     <li><span>Python guided project</span></li>
+                                     <li><span>Agile scrum developer certification</span></li>
+                                     <li><span>Agile scrum product owner certification</span></li>
+                                     <li><span>Professional diploma in agile and scrum</span></li>
+                                     <li><span>Advanced scrum master certification</span></li>
+                                     <li><span>BMaster of essential c++ programming beginner to advanced</span></li>
+                                     <li><span>Mater Linux basics</span></li>
+                                     <li><span>CSS, Bootstrap, JavaScript, Web development course</span></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+
+             <script>
+                // JavaScript function to handle mouseover event
+                function highlightTab(tabName) {
+                    let tabLinks = document.getElementsByClassName("tab-links");
+                    let tabContents = document.getElementsByClassName("tab-contents");
+        
+                    // Remove active class from all tabs
+                    for (let tabLink of tabLinks) {
+                        tabLink.classList.remove("active-link");
+                    }
+                    for (let tabContent of tabContents) {
+                        tabContent.classList.remove("active-tab");
+                    }
+        
+                    // Add active class to the hovered tab
+                    document.querySelector(`.tab-links[onmouseover="highlightTab('${tabName}')"]`).classList.add("active-link");
+                    document.getElementById(tabName).classList.add("active-tab");
+                }
+            </script>
+         
+            <!------------services------->
+            <div id="services">
+                <div class="container">
+                    <h1 class="sub-title">My Services</h1>
+                    <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Web Design</h3>
+                            <p>Web design involves creating and arranging the layout, visual elements, and user interface of a website to ensure it is attractive, functional, and user-friendly. It includes aspects like layout design, color schemes, typography, graphics, and responsiveness.</p>
+                            
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-crop"></i>
+                            <h3>UI/UX Design</h3>
+                            <p>UI design focuses on the visual elements of a product, like buttons and layouts, while UX design ensures the overall experience is intuitive and enjoyable. Together, they create user-friendly digital experiences.</p>
+                            
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-app-store"></i>
+                            <h3>App Design</h3>
+                            <p>App design involves creating the layout, user interface, and overall experience of a mobile application. It focuses on ensuring the app is visually appealing, easy to navigate, and provides a seamless, intuitive experience for users.</p>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-----------portfollio -->
+            <div id="portfolio">
+                <div class="container">
+                    <h1 class="sub-title">My Work</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="images/TodoMVC.jpeg" >
+                            <div class="layer">
+                                <h3>MY-TO-DO-APPLICATION</h3>
+                                <p>I built a MY-TO-DO app using Android Studio and Java.
+                                    Designed with Figma, it offers task creation, editing,
+                                    deletion, notifications, and categorization for efficient
+                                    task management.</p>
+                                <a href="https://github.com/NayomiPiyumika/To-Do-Applicatio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://www.figma.com/design/er88C5CFRGb075Hl5ufh8i/Untitled?node-id=0-1&node-type=canvas&t=6BZIF4VfohNWMHKX-0"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/Pizza - Food Delivery App 🍕.jpeg" >
+                            <div class="layer">
+                                <h3>FOODIES - RESTAURANT UI</h3>
+                                <p>Designed a user-friendly food delivery app interface
+                                    using Figma, focusing on modern UI/UX principles and
+                                    responsive design.</p>
+                                <a href="https://www.figma.com/design/83JVIwqqPSEkPoqM9epamd/foodies"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                            
+                        <div class="work">
+                            <img src="images/New rock paper scissors iOS game_.jpeg">
+                            <div class="layer">
+                                <h3>THE SCISSORS-PAPER-ROCK GAME</h3>
+                                <p>This JavaScript project made a Rock-Paper-Scissors
+                                    game. The game has a user-friendly interface and lets
+                                    users play against the computer.</p>
+                                <a href="https://github.com/NayomiPiyumika/Rock---Paper---Scissors"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="images/RupiPal - EMI Calculator.jpeg" >
+                            <div class="layer">
+                                <h3>REVERSE POLISH NOTATION CALCULATOR</h3>
+                                <p>Developed a Reverse Polish Notation (RPN) calculator
+                                    in C, using stack data structures for efficient
+                                    expression evaluation. Implemented key operations
+                                    with error handling to ensure robust functionality</p>
+                                <a href="https://github.com/Ishashes/Programming-II"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                            
+                        <div class="work">
+                            <img src="images/Vault 111 Calculator App.jpeg" >
+                            <div class="layer">
+                                <h3>PYTHON CALCULATOR</h3>
+                                <p>I built a Python calculator.The calculator has a simple
+                                    interface for easy use. This project helped me learn
+                                            Python's basic operations.</p>
+                                <a href="https://github.com/NayomiPiyumika/python_calculator"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                            
+                        <div class="work">
+                            <img src="images/Tic Tac Toe.jpeg">
+                            <div class="layer">
+                                <h3>PYTHON TIK-TOE-GAME</h3>
+                                <p>I built a simple Python bank account program. Users can
+                                    view their current balance, deposit money, and
+                                    withdraw funds.</p>
+                                <a href="https://github.com/NayomiPiyumika/python_tik-toe-game"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="images/Banking App Mobile UI Concept - Copy.jpeg">
+                            <div class="layer">
+                                <h3>PYTHON BANK WORK</h3>
+                                <p>I built a simple Python bank account program. Users can
+                                    view their current balance, deposit money, and
+                                    withdraw funds.</p>
+                                <a href="https://github.com/NayomiPiyumika/python_bank-_work"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        
+                    
+                        <div class="work">
+                            <img src="images/Nokia 3310 Menu Walkthrough and Snake II on a Real Phone.jpeg" >
+                            <div class="layer">
+                                <h3>THE SNAKE GAME</h3>
+                                <p>I built a 4-in-a-line game using JavaScript. Players take
+                                    turns, and the game ends when four disks align. This
+                                    project helped me learn JavaScript DOM manipulation
+                                    and event handling.</p>
+                                <a href="https://github.com/NayomiPiyumika/js_snake"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    
+                           
+                    </div>
+                </div>
+            </div>
+        <!----------------------------contact------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>nayomiwarnasooriya@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>0757187567</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/nayomi-piyumika-a973962a3/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/NayomiPiyumika"><i class="fa-brands fa-github"></i></a> 
+                        </div>
+                        <a href="images/W.M.N.P.Warnasooriya.pdf" download class="btn ">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                            
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @Nayomi. Made with <i class="fa-solid fa-heart"></i> by easy coding</p>
+            </div>
+        </div>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxMr3VqOraydodRd_uk66QYF49MFnpz5bhpTqkTqRecIfcFk5fNPgSjiA816H6BZ_d8/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+    
+        </body>
+    </html>
+
+
